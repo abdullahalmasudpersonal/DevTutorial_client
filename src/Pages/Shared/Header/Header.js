@@ -25,7 +25,8 @@ const Header = () => {
                                 <Link to='/about' style={{ textDecoration: 'none' }}><a class="nav-link active fw-bold" aria-current="page" >About</a></Link>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active fw-bold" aria-current="page" >Connect Us</a>
+                                <Link  to='/connect_us' style={{ textDecoration: 'none' }}>      <a class="nav-link active fw-bold" aria-current="page" >Connect Us</a></Link>
+                          
                             </li>
                             {/* <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
