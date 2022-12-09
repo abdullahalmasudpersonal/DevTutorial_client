@@ -1,15 +1,16 @@
 .allblogs-bg {
-    margin-top: 62px;
-    background: rgb(0, 54, 126);
+    /* margin-top: 62px; */
+  /*   background: rgb(0, 54, 126); */
     color: white;
     min-height: 800px;
-    background: rgb(0, 41, 102);
+ /*    background: rgb(0, 41, 102); */
 }
 
 .bolg-dev-dev {
     box-shadow: rgba(0, 0, 0, 0.493) 0px 3px 6px, rgba(0, 0, 0, 0.596) 0px 3px 6px;
     border-radius: 5px;
     transition: .5s;
+    background: rgb(0, 41, 102);
 }
 
 .bolg-read-more {
