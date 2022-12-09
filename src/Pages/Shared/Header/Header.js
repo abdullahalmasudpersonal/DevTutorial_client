@@ -22,7 +22,7 @@ const Header = () => {
                                 <Link to='/tutorials' style={{ textDecoration: 'none' }}><a class="nav-link active fw-bold" aria-current="page" >Tutorial</a></Link>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active fw-bold" aria-current="page" >About</a>
+                                <Link to='/about' style={{ textDecoration: 'none' }}><a class="nav-link active fw-bold" aria-current="page" >About</a></Link>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link active fw-bold" aria-current="page" >Connect Us</a>
