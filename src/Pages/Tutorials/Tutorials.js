@@ -4,7 +4,7 @@ import Tutorial from './Tutorial';
 const Tutorials = () => {
     const [tutorials, setTutorials] = useState([]);
     useEffect( () =>{
-        fetch('http://localhost:5000/tutorials')
+        fetch('https://dev-tutorial.onrender.com/tutorials')
         .then(res => res.json())
         .then(data => setTutorials(data));
     }, []);
