@@ -5,7 +5,7 @@ import '../node_modules/bootstrap/dist/js/bootstrap.min';
 import About from './Pages/About/About';
 import ConnectUs from './Pages/ConnectUs/ConnectUs';
 import Home from './Pages/Home/Home';
-import RedingHistory from './Pages/RedingHistory/RedingHistory';
+import ReadingHistory from './Pages/ReadingHistory/ReadingHistory';
 import Footer from './Pages/Shared/Footer/Footer';
 import Header from "./Pages/Shared/Header/Header";
 import Tutorials from './Pages/Tutorials/Tutorials';
@@ -22,7 +22,7 @@ function App() {
           <Route path='/tutorials' element={<Tutorials />} />
           <Route path='/about' element={<About />} />
           <Route path='/connect_us' element={<ConnectUs />} />
-          <Route path='/reading_history' element={<RedingHistory />} />
+          <Route path='/reading_history' element={<ReadingHistory/>} />
         </Routes>
         <Footer />
       </Provider>
