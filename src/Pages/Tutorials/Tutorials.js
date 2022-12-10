@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { useSelector } from 'react-redux';
 import Tutorial from './Tutorial';
 
 const Tutorials = () => {
@@ -8,6 +9,9 @@ const Tutorials = () => {
         .then(res => res.json())
         .then(data => setTutorials(data));
     }, []);
+
+    const state = useSelector((state) => state);
+    console.log(state)
 
     return (
         <div className='allblogs-bg py-5'>

@@ -37,7 +37,7 @@ const Header = () => {
                                     <Link to='/connect_us' style={{ textDecoration: 'none' }}> <a class="nav-link active fw-bold" aria-current="page" >Connect Us</a></Link>
                                 </li>
                                 <li class="nav-item" style={{backgroundColor:'pink', borderRadius:'50%', padding:'2px 5px'}}>
-                                    <Link to='/connect_us' style={{ textDecoration: 'none' }}> <a class="nav-link active fw-bold" aria-current="page" ><FontAwesomeIcon icon={faHistory} /></a></Link>
+                                    <Link to='/reading_history' style={{ textDecoration: 'none' }}> <a class="nav-link active fw-bold" aria-current="page" ><FontAwesomeIcon icon={faHistory} /></a></Link>
                                 </li>
                             </ul>
                         </span>
