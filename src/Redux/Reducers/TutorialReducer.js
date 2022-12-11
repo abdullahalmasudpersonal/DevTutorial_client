@@ -1,51 +1,51 @@
-import { ADD_TO_CART, REMOVE_FROM_CART } from "../ActionTypes/ActionTypes";
+import { ADD_TO_HISTORY, REMOVE_FROM_HISTORY } from "../ActionTypes/ActionTypes";
 
 
 const initialState = {
-  cart: [],
+  readingHistory: [],
 };
 
 const TutorialReducer = (state = initialState, action) => {
-  const selectedProduct = state.cart.find(
-    (product) => product._id === action.payload._id
+  const selectedTutorial = state.readingHistory.find(
+    (tutorial) => tutorial._id === action.payload._id
   );
 
-  console.log(selectedProduct);
+  console.log(selectedTutorial);
 
   switch (action.type) {
-    case ADD_TO_CART:
-      if (selectedProduct) {
-        const newCart = state.cart.filter(
-          (product) => product._id !== selectedProduct._id
+    case ADD_TO_HISTORY:
+      if (selectedTutorial) {
+        const newReadingHistory = state.readingHistory.filter(
+          (tutorial) => tutorial._id !== selectedTutorial._id
         );
 
-        selectedProduct.quantity = selectedProduct.quantity + 1;
+        selectedTutorial.quantity = selectedTutorial.quantity + 1;
 
         return {
           ...state,
-          cart: [...newCart, selectedProduct],
+          readingHistory: [...newReadingHistory, selectedTutorial],
         };
       }
       return {
         ...state,
-        cart: [...state.cart, { ...action.payload, quantity: 1 }],
+        readingHistory: [...state.readingHistory, { ...action.payload, quantity: 1 }],
       };
-    case REMOVE_FROM_CART:
-      if (selectedProduct.quantity > 1) {
-        const newCart = state.cart.filter(
-          (product) => product._id !== selectedProduct._id
+    case REMOVE_FROM_HISTORY:
+      if (selectedTutorial.quantity > 1) {
+        const newReadingHistory = state.readingHistory.filter(
+          (tutorial) => tutorial._id !== selectedTutorial._id
         );
-        selectedProduct.quantity = selectedProduct.quantity - 1;
+        selectedTutorial.quantity = selectedTutorial.quantity - 1;
 
         return {
           ...state,
-          cart: [...newCart, selectedProduct],
+          readingHistory: [...newReadingHistory, selectedTutorial],
         };
       }
       return {
         ...state,
-        cart: state.cart.filter(
-          (product) => product._id !== action.payload._id
+        readingHistory: state.readingHistory.filter(
+          (tutorial) => tutorial._id !== action.payload._id
         ),
       };
     default:

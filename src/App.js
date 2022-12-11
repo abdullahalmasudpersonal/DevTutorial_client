@@ -4,7 +4,6 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import '../node_modules/bootstrap/dist/js/bootstrap.min';
 import About from './Pages/About/About';
 import ConnectUs from './Pages/ConnectUs/ConnectUs';
-import Home from './Pages/Home/Home';
 import ReadingHistory from './Pages/ReadingHistory/ReadingHistory';
 import Footer from './Pages/Shared/Footer/Footer';
 import Header from "./Pages/Shared/Header/Header";
@@ -18,8 +17,7 @@ function App() {
       <Provider store={store}>
         <Header />
         <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/tutorials' element={<Tutorials />} />
+          <Route path='/' element={<Tutorials />} />
           <Route path='/about' element={<About />} />
           <Route path='/connect_us' element={<ConnectUs />} />
           <Route path='/reading_history' element={<ReadingHistory/>} />

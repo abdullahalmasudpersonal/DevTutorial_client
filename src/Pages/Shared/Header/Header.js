@@ -7,7 +7,7 @@ const Header = () => {
     return (
         <div >
 
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar navbar-expand-lg navbar-light " style={{backgroundColor:'rgb(240, 240, 240)'}}>
                 <div className='container'>
                     <Link to='/' style={{ textDecoration: 'none' }}><a class="navbar-brand fw-bold">DEV TUTORIAL</a></Link>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -16,12 +16,7 @@ const Header = () => {
                     <div class="collapse navbar-collapse" id="navbarText">
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item">
-                                <Link to='/' style={{ textDecoration: 'none' }}>
-                                    <a class="nav-link active fw-bold" aria-current="page" >Home</a>
-                                </Link>
-                            </li>
-                            <li class="nav-item">
-                                <Link to='/tutorials' style={{ textDecoration: 'none' }}><a class="nav-link active fw-bold" aria-current="page" >Tutorial</a></Link>
+                                <Link to='/' style={{ textDecoration: 'none' }}><a class="nav-link active fw-bold" aria-current="page" >Home</a></Link>
                             </li>
                             <li class="nav-item">
                                 <Link to='/about' style={{ textDecoration: 'none' }}><a class="nav-link active fw-bold" aria-current="page" >About</a></Link>
@@ -33,10 +28,7 @@ const Header = () => {
                         </ul>
                         <span class="navbar-text">
                             <ul class="navbar-nav mr-auto">
-                                <li class="nav-item">
-                                    <Link to='/connect_us' style={{ textDecoration: 'none' }}> <a class="nav-link active fw-bold" aria-current="page" >Connect Us</a></Link>
-                                </li>
-                                <li class="nav-item" style={{backgroundColor:'pink', borderRadius:'50%', padding:'2px 5px'}}>
+                                <li class="nav-item" style={{backgroundColor:'rgb(210, 210, 210)', borderRadius:'50%', padding:'2px 5px'}}>
                                     <Link to='/reading_history' style={{ textDecoration: 'none' }}> <a class="nav-link active fw-bold" aria-current="page" ><FontAwesomeIcon icon={faHistory} /></a></Link>
                                 </li>
                             </ul>

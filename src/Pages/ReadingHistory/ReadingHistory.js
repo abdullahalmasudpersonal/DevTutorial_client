@@ -8,11 +8,17 @@ const ReadingHistory = () => {
     return (
         <div>
             {
-                readingHistory.sort((a, b) => a._id - b._id)
-                    .map((tutorial) => {
-                        <Tutorial key={tutorial._id} tutorial={tutorial} />
-                    })
+                readingHistory.map((tutorial) =>(
+                    <Tutorial tutorial={tutorial} />
+                ))
             }
+
+          {/*   {readingHistory
+                .sort((a, b) => a._id - b._id)
+                .map((tutorial) => (
+                    <Tutorial key={tutorial._id} tutorial={tutorial} />
+                ))
+            } */}
         </div>
     );
 };
